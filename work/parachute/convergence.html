@@ -1,0 +1,91 @@
+<!DOCTYPE">
+<html>
+<head>
+<title>Parachute Simulation</title>
+<meta name="author" content="Zheng Gao" >
+<meta name="date" content="2014-06-05T14:36:17-0400" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" href="../../style.css" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper"> 
+	
+	<div id="header">
+	<h1 class="font_0">Parachute Simulation</h1>
+	</div>
+
+	<ul id="menue">
+			<li><a href="../../index.html"> Go back home</a></li>
+			<li><a href="#swing"> String</a></li>
+			<li><a href="#drum"> Drum</a></li>
+	</ul>
+<div id="content" style="padding: 10 100 10 100">
+
+<h2><a name="string">String</a></h2>
+<p>In this section, we test the string model with different mesh grid.</p>
+
+<table width="95%" border="1" cellpadding="2" cellspacing="1" style="table-layout:fixed;">
+<tr><td><img src="gallery/convergence/swing-50.gif" width="100%" /></td>
+	 <td><img src="gallery/convergence/swing-100.gif" width="100%"/></td>
+	 <td><img src="gallery/convergence/swing-200.gif" width="100%"/></td>
+	 <td><img src="gallery/convergence/swing-400.gif" width="100%"/></td></tr>
+<tr><td>total mass: 0.5;</br> points number: 50;</br>  point mass: 0.01;</br> spring constant: 5000;</br>mesh grid: 50*50;</br>computing time: 1s</td>
+	 <td>total mass: 0.5;</br> points number: 100;</br>  point mass: 0.005;</br> spring constant: 10000;</br>mesh grid: 100*100</br>computing time: 2s</td>
+	 <td>total mass: 0.5;</br> points number: 200;</br>  point mass: 0.0025;</br> spring constant: 20000;</br>mesh grid: 200*200</br>computing time: 6s</td>
+	 <td>total mass: 0.5;</br> points number: 400;</br>  point mass: 0.00125;</br> spring constant: 40000;</br>mesh grid: 400*400</br>computing time: 18s</td></tr>
+</table>
+
+<table table width="95%" border="2">
+<tr>
+<td><img src="gallery/convergence/swing_error.png" width="100%" alt="" /></td>
+	 <td width="30%">This model shows a nice convergence.<br>
+	  <table width="100%" border="1">
+		 <tr><td>L1</td><td>L2</td><td>L_inf</td><td>convergence rate</td><td>error between</td></tr>
+		 <tr><td>0.0017</td><td>0.0144</td><td>0.0053</td><td>0.9979</td><td>50 and 100</td></tr>
+		 <tr><td>0.0009</td><td>0.0072</td><td>0.0026</td><td>1.0018</td><td>100 and 200</td></tr>
+		 <tr><td>0.0004</td><td>0.0036</td><td>0.0013</td><td>-</td><td>200 and 400</td></tr>
+		 <tr></tr>
+	  </table>
+</tr>
+</table>
+
+	
+<h2><a name="drum">Drum</a></h2>
+	<p>Here, we test the drum model with different mesh grids and comparing them with each other.</p>
+<table width="95%" border="2">
+<tr><td><img src="gallery/convergence/drum-mesh-15.gif" width="100%" alt="" /></td>
+	 <td><img src="gallery/convergence/drum-mesh-30.gif" width="100%"  alt="" /></td>
+	 <td><img src="gallery/convergence/drum-mesh-60.gif" width="100%" alt="" /></td>
+<tr><td>total mass: 380;</br> points number: 266;</br>  point mass: 1.428571;</br> mesh grid: 15*15*15</br>time: 21m 6s</td>
+	 <td>total mass: 380;</br> points number: 990;</br>  point mass: 0.383838;</br> mesh grid: 30*30*30</br>time: 1h 58m 10s</td>
+	 <td>total mass: 380;</br> points number: 3790;</br> point mass: 0.100264;</br> mesh grid: 60*60*60</br>time: 12h 57m 3s</td></tr>
+</table>
+
+<p>To see the difference between each experiment, we study the behaviour of the area of each experiment</p>
+<table table width="95%" border="2">
+<tr>
+	 <td><img src="gallery/convergence/fabric_error.png" width="100%" alt="" /></td>
+	 <td>This figure shows the behaviors of areas with different mesh grids.</br>
+	 From the figure, we can see a nice convergence of the Cauchy error as the mesh grid changing.<br>
+	  <table border="1">
+		 <tr><td>L1</td><td>L2</td><td>L_inf</td><td>error between</td></tr>
+		 <tr><td>0.0024</td><td>0.2290</td><td>0.0081</td><td>15 and 30</td></tr>
+		 <tr><td>0.0005</td><td>0.0508</td><td>0.0025</td><td>30 and 60</td></tr>
+		 <tr><td>0.0009</td><td>0.0890</td><td>0.0034</td><td>60 and 120</td></tr>
+		 <tr></tr>
+	  </table>
+	</td>
+</tr>
+</table>
+</div>
+    <div id="footer">
+  		<p style="text-align: center;">Department of Applied Matdematics & Statistics • Stony Brook, NY 11794-3600 • 631-632-8370 • Fax 631-632-8490</p>  
+    </div>
+
+</body>
+</html>

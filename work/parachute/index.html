@@ -1,114 +1,64 @@
 <!DOCTYPE">
 <html>
 <head>
-<title>Zheng Gao's Homepage</title>
+<title>Parachute Simulation</title>
 <meta name="author" content="Zheng Gao" >
 <meta name="date" content="2014-06-05T14:36:17-0400" >
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
 <meta http-equiv="content-style-type" content="text/css">
 <meta http-equiv="expires" content="0">
-<link rel="stylesheet" href="style.css" media="screen">
+<link rel="stylesheet" href="../../style.css" media="screen">
 </head>
 
 <body>
 
 <div id="wrapper"> 
 	
-	<div id="header" style="background-image: url(gallery/background.jpg); background-size: cover">
-	<h1 class="font_0">Zheng Gao, PhD</h1>
-	<h1 class="font_8">COMPUTATIONAL APPLIED MATHEMATICS</p>
+	<div id="header">
+	<h1 class="font_0">Parachute Simulation</h1>
 	</div>
 
 	<ul id="menue">
-			<li><a href="#aboutme"> Home</a></li>
-			<li><a href="#aboutme"> About Me</a></li>
-			<li><a href="#document"> Documents</a><li>
-			<li><a href="#research"> Research</a><li>
+			<li><a href="../../index.html"> Go home </a></li>
 	</ul>
 	
 	<div  id="content" width=960 align="left">	
-		<img style="float:left; margin: 0 20 0 20" src="gallery/portrait.JPG" width=300 alt="" />
-			<div style="width:80%" align="left">
-			<h2 class="font_2">ZHENG GAO</h2>
-			<p>I am a Ph.D. candidate in AMS department, Stony Brook University.
-			Now I am working with Professor Xiaolin Li on Computational Fluid Dynamics.
-			This homepage is for the list of my working process.</p>
-			<br>
-			<h3>Contact information:</h3>
-			Email: <a href="mailto:zheng.gao@stonybrook.com">zheng.gao@stonybrook.com</a><br>
-			Tel: 631-682-5883 <br>
-			Facebook: <a href="https://www.facebook.com/david.gao.5895" >Zheng Gao</a>
-			</div>
-	<div id="content2">
-		<div id="h22" class="font_2"><a name="document"></a>DOCUMENTS</div>
-	    	<table id="imgbox2">
-		<tr>
-		<td>
-		<img src="gallery/note.png"/>
-		<p class="font_6">Document for FronTier++</p>
-		<p color=white>8.17.2014</p>
-		<div id="read"><a target= _blank href="front/index.html" >READ MORE</a></div>
-		</td>
-
-		<td>
-		<img src="gallery/note.png"/>
-		<p class="font_6">A simple FronTier notes</p>
-		<p color=white>4.18.2013</p>
-		<div id="read"><a target= _blank href="note/note1.html" >READ MORE</a></div>
-		</td>
-
+	<div class="masonry">
+	    <div class="item">
+		<p class="font_6">Convergence test</p>
+		<p class="font_9">6.4.2013</p>
+		<img src="gallery/convergence/convergence.png"/>
+		<hr>
+		<p>Most of the criticize about spring-mass model is its convergence problem
+		to continuum fabric. This problem can be overcome by considering the angle energy two adjacent spring. 
+		The convergence was achieved at 1st order by making some test on simple 2d and 3d cases</p>
+		<div id="read"><a target= _blank href="convergence.html" >READ MORE</a></div>
+		</div>
 		
-		<td>
-		<img src="gallery/note.png"/>
-		<p class="font_6">Presentations</p>
-		<p color=white>4.18.2013</p>
-		<div id="read"><a target= _blank href="ppt/ppt.html" >READ MORE</a></div>
-		</td>
-		</tr>
-	     </table>
+		<div class="item">
+		<p class="font_6">Parachute Simulation</p>
+		<p class="font_9">7.30.2013</p>
+		<img src="gallery/parachute/parachute.JPG"/>
+		<hr>
+		<p>Parachute simulation of inflation, coupling with incompressible fluid solver</p>
+		<div id="read"><a target= _blank href="http://www.ams.sunysb.edu/~linli/para/" >READ MORE</a></div>
+		</div>
+		
+		<div class="item">
+		<p class="font_6">Parallel communication test with MPI library</p>
+		<p class="font_9">11.20.2014</p>
+		<hr>
+		<img src="gallery/MPI/MPI.jpg"/>
+		<hr>
+		<p>Parallel communication of fluid and canopy is achieved by dividing domain to some 
+		sub-domains and then appending buffer to them. Parallel communications are needed
+		before inquiring information from neighbours.</p>
+		<div id="read"><a target= _blank href="http://www.ams.sunysb.edu/~linli/para/parallel.html" >READ MORE</a></div>
+		</div>
+		
 	</div>
-
-	<h2 class="font_2"><a name="research"></a>MY LATEST RESEARCH</h2><br>
-		<div id="imgbox">
-		<img src="gallery/cloud.jpg"/>
-		<p>Except for huge computational cost, direct numerical simulation (DNS) is a powerful and reliable
-		approach for studying turbulent flow. Here we use DNS to study cloud entrainment and mixing processes
-		in turbulent environment. Cloud is modelled with large amounts of simple particles, thus evaporation, condensation and 
-		inertial motion can be resolved in the simulation(4.18.2013)</p>
-		<div id="read"><a target= _blank href="work/cloud/index.html" >READ MORE</a></div>
-		</div>
-		
-		<div id="imgbox">
-		<img src="gallery/parachute.jpg"/>
-		<p>Unlike the experimental methods, numerical simulation of parachute inflation and falling is 
-		economical and safe. This complex process includes the models of
-		canopies, turbulence flow and fluid-structure interactions. 
-		We used enhanced mass-spring model to simulate the parachute canopy and fluid is solved with 
-		fractional step method and coupled with k-eps turbulence model for high Reynolds number air flow(4.18.2013)</p>
-		<div id="read"><a target= _blank href="work/parachute/index.html" >READ MORE</a></div>
-		</div>
-		
-		<div id="imgbox">
-		<img src="gallery/diffusion.jpg"/>
-		<p>The instability of an interface between two fluids with different densities is often called Rayleigh–Taylor instability,
-			which occurs when the light fluid is pushing the heavier fluid. The simulation of this physical process requires preserving
-			the discontinuity at the interface, thus a numerical method with interface tracking capability is desirable.(4.18.2013)</p>
-		<div id="read"><a target= _blank href="work/diffusion/index.html" >READ MORE</a></div>
-		</div>
-		
-		<div id="imgbox">
-		<img src="gallery/bullet.jpeg"/>
-		<p>When a bullet travels at supersonic speed that is faster than sound speed, 
-		the air is greatly compressed at the front-most tip of the bullet, 
-		then a bullet bow shock-wave will be created and heard by any witness.
-		In our simulation, the air flow is modelled by Euler equation and the bullet is 
-		driven by pressure difference around it. 
-		(4.18.2013)</p>
-		<div id="read"><a target= _blank href="work/bullet/index.html" >READ MORE</a></div>
-		</div>
-</div>
-<a style='float: right' href="http://info.flagcounter.com/TOLa"><img src="http://s03.flagcounter.com/count/TOLa/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/" alt="Flag Counter" border="0"></a>
+	</div>
     <div id="footer">
   		<p style="text-align: center;">Department of Applied Mathematics & Statistics • Stony Brook, NY 11794-3600 • 631-632-8370 • Fax 631-632-8490</p>
 		<a href="#" class="go-top">Go Top</a>    

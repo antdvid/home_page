@@ -1,0 +1,81 @@
+<!DOCTYPE">
+<html>
+<head>
+<title>Bullet</title>
+<meta name="author" content="Zheng Gao" >
+<meta name="date" content="2014-06-05T14:36:17-0400" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" href="../../style.css" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper"> 
+	
+	<div id="header">
+	<h1 class="font_0">Bullet Simulation</h1>
+	</div>
+
+	<ul id="menue">
+			<li><a href="../../index.html"> Go home </a></li>
+	</ul>
+
+<div id="content">
+	<div class="masonry">
+	<div class="item">
+	<img src="gallery/AK47---live-round-bullet.jpg" width="360" height="360" alt="" />
+	<hr>
+	<p>To construct the bullet model, we need three parameters: the length, the radius, the <a href="http://en.wikipedia.org/wiki/Ogive">ogive</a><br />
+	For example, the famous 7.62 NATO used by <a href="http://en.wikipedia.org/wiki/AK-47" >AK47</a> takes<br />
+	length = 26.8 mm; radius = 7.62/2 mm; ogive = 6.(updated: 17 March 2013)</p>
+	</div>
+		
+	<div class="item">	
+	<img src="gallery/bullet.png" width="450" height="450" alt="" />
+	<p>Here is a picture of the bullet we set up for the 7.62 NATO used by 
+	<a href="http://en.wikipedia.org/wiki/AK-47" >AK47</a>.(updated: 17 March 2013)</p>
+	</div>
+		
+	<div class="item">
+	<img src="gallery/dens.gif" alt="" />
+	<p>This is the 2D bullet coupling with compressible fulid solver.(updated: 2 April 2013)</p>
+	</div>
+
+	<div class="item">
+	<img src="gallery/bullet3d.gif" alt="" />
+	<hr>
+	<p>This is the 3D bullet coupling with compressible fulid solver.(updated: 30 April 2013)</p>
+	</div>
+</div>
+</div>
+    <div id="footer">
+  		<p style="text-align: center;">Department of Applied Mathematics & Statistics • Stony Brook, NY 11794-3600 • 631-632-8370 • Fax 631-632-8490</p>
+		<a href="#" class="go-top">Go Top</a>    
+    </div>
+</div>
+	<!-- JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+</body>
+</html>
