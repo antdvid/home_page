@@ -1,0 +1,118 @@
+<!DOCTYPE">
+<html>
+<head>
+<title>Zheng Gao's Homepage</title>
+<meta name="author" content="Zheng Gao" >
+<meta name="date" content="2014-06-05T14:36:17-0400" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" href="style.css" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper"> 
+	
+	<div id="header" style="background-image: url(gallery/background.jpg); background-size: cover">
+	<h1>Zheng Gao(高 正)</h1>
+	</div>
+
+	<ul id="menue">
+			<li><a href="#aboutme"> Home</a></li>
+			<li><a href="#aboutme"> About Me</a></li>
+			<li><a href="#document"> Documents</a><li>
+			<li><a href="#research"> Research</a><li>
+	</ul>
+	
+	<div  id="content" width=960 align="left">	
+		<img style="float:left; margin: 0 20 0 20" src="gallery/portrait.JPG" width=300 alt="" />
+			<div style="width:80%" align="left">
+			<h2>ZHENG GAO</h2>
+			<p>I am a Ph.D. candidate in AMS department, Stony Brook University.
+			Now I am working with Professor Xiaolin Li on Computational Fluid Dynamics.
+			This homepage is for the list of my working process.</p>
+			<br>
+			<h3>Contact information:</h3>
+			Email: <a href="mailto:zheng.gao@stonybrook.com">zheng.gao@stonybrook.com</a><br>
+			Tel: 631-682-5883 <br>
+			Facebook: <a href="https://www.facebook.com/david.gao.5895" >Zheng Gao</a>
+			</div>
+	<div id="content2">
+		<div id="h22"><a name="document"></a>DOCUMENTS</div>
+	    	<table id="imgbox2">
+		<tr>
+		<td>
+		<img src="gallery/note.png"/>
+		<div class="font_6">Document for FronTier++</div>
+		<p color=white>8.17.2014</p>
+		<div id="read"><a target= _blank href="front/index.html" >READ MORE</a></div>
+		</td>
+
+		<td>
+		<img src="gallery/note.png"/>
+		<p style="font-style:italic;font-family:times;font-weight:bold;font-size:23px">A simple FronTier notes</p>
+		<p color=white>4.18.2013</p>
+		<div id="read"><a target= _blank href="note/note1.html" >READ MORE</a></div>
+		</td>
+
+		
+		<td>
+		<img src="gallery/note.png"/>
+		<p class="font_6">Presentations</p>
+		<p color=white>4.18.2013</p>
+		<div id="read"><a target= _blank href="ppt/ppt.html" >READ MORE</a></div>
+		</td>
+		</tr>
+	     </table>
+	</div>
+
+	<h2><a name="research"></a>MY LATEST RESEARCH</h2>
+		<table id="imgbox">
+		<tr>
+		<td>
+		<img src="gallery/cloud.jpg"/>
+		<p>DNS for studying cloud entrainment and mixing process. We simulate
+		this process by regarding droplets as large amount of particles and
+		turbulence is resolved down to the kologorov length scale.(4.18.2013)</p>
+		<div id="read"><a target= _blank href="work/cloud/index.html" >READ MORE</a></div>
+		</td>
+		<td id="imgbox">
+		<img src="gallery/diffusion.jpg"/>
+		<p>DNS for studying cloud entrainment and mixing process. We simulate
+		this process by regarding droplets as large amount of particles and
+		turbulence is resolved down to the kologorov length scale.(4.18.2013)</p>
+		<div id="read"><a target= _blank href="work/diffusion/index.html" >READ MORE</a></div>
+		</td>
+		</table>
+</div>
+<a style='float: right' href="http://info.flagcounter.com/TOLa"><img src="http://s03.flagcounter.com/count/TOLa/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/" alt="Flag Counter" border="0"></a>
+    <div id="footer">
+  		<p style="text-align: center;">Department of Applied Mathematics & Statistics • Stony Brook, NY 11794-3600 • 631-632-8370 • Fax 631-632-8490</p>
+		<a href="#" class="go-top">Go Top</a>    
+    </div>
+</div>
+	<!-- JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body { 
+			margin: 0px;
+			background-color:white; 
+     } 
+
+#wrapper { 
+				margin: 0px; /*版面居中對齊*/
+				margin-top: 0px;
+				margin-bottom: 0px; 
+				font-family: "微軟正黑體", Arial, Helvetica, sans-serif; 
+				color: #a9a9a9; /*文字顏色設定*/ 
+				border: 0px solid #005; /*網頁做外框的設定*/
+				background-color: #27223e } 
+
+#menue {
+height:3.2em;
+width:760px;
+margin:0 auto;
+list-style:none;
+}
+#menue li {
+float:left;
+}
+#menue a {
+display:block;
+text-align:center;
+color:white;
+height:3.2em;
+width:150px;
+line-height:3.2em;
+text-decoration:none; 
+margin-left:-2px;
+font-weight:bold;
+}
+#menue a:hover, #menue a:focus {
+color:#dfae6c;
+}
+
+#header{ 
+				background-color:white; 
+				height: 400px; /*高度設定，設定之高度加上下內距padding等時實際高度，110px+20px+20px=150px*/ 
+				padding:0px; /*內距設定*/ 
+				margin:5px;
+				margin-bottom:0px;
+				margin-top:0px;
+				} 
+
+#content { /*可不用設定寬度和高度，由文字來決定高度*/ 
+				background-color:#dcdcdc; /*背景色設定*/ 
+				background-image: url(gallery/bg.jpg);
+				background-repeat: no-repeat;
+    				background-attachment: fixed;
+				font-size: 16px; /*字體大小*/ 
+				line-height: 2em; /*字體行間為兩個字距*/ 
+				color:#27223e; /*文字顏色設定*/ 
+				padding:70 200 70 200;} 
+#content a{
+	text-decoration: none;
+	color: #27223e;
+}
+#content a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+#content2 { height: 300px;
+	background-color:#dfcfba; /*背景色設定*/ 
+	font-size: 14px; /*字體大小*/ 
+	line-height: 2em; /*字體行間為兩個字距*/ 
+	color:#27223e; /*文字顏色設定*/ 
+	padding: 30px; /*文字與#content間的內距*/ 
+	margin: 70 -200 70 -200;} 
+
+
+
+#content2 a{
+	text-decoration: none;
+	color: #27223e;
+}
+#content2 a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+#read {text-align: center;}
+#read a{border-style:solid;
+	border-width:2px;
+	color:#27223e;
+	border-color:#27223e;
+	padding:10px;}
+
+#read a:hover{border-style:solid;
+	border-width:2px;
+	color:white;
+	border-color:white;
+	padding:10px;}
+
+#imgbox{margin:0 auto; width:100%;}
+#imgbox td{text-align:center;width:30%;line-height:200%;padding-right:50;}
+#imgbox img{width: 100%;}
+#imgbox p{text-align:left;}
+
+#imgbox2{margin:0 auto; border-collapse:separate; border-spacing:30;}
+#imgbox2 td{text-align:center;width:30%;line-height:200%;padding-right:50;}
+
+.centerDiv { width: 45%; height: 100%; margin: 0 auto;} 
+
+#footer { 	background-color:white; 
+				font-size: 14px; /*文字尺寸設定*/ 
+				line-height: 1.5em; /*文字行高設定為1.5字高*/ 
+				color: #bababa; /*文字顏色設定*/ 
+				padding: 20px; /*內距設定*/ } 
+
+h1{ text-align: center; color:#FFF; position:relative; top:40%; font-family:Arial,Helvetica,sans-serif;} 
+h2{font-weight: 300;
+    display: inline-block;
+    font-style:italic;
+    padding-bottom: 5px;
+    position: relative;}
+h2:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #27223e;
+}
+#h22{
+    font-size: 25px;
+    margin:0 auto;
+    text-align:center;
+    text-decoration: underline;}​
+
+.font_6{font-style:italic;font-family:times;font-weight:bold;font-size:23px}
+
+
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}

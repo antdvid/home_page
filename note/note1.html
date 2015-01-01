@@ -1,0 +1,185 @@
+﻿<!DOCTYPE">
+<html>
+<head>
+<title>Zheng Gao's Homepage</title>
+<meta name="author" content="Zheng Gao" >
+<meta name="date" content="2014-06-05T14:36:17-0400" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" href="../style.css" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper"> 
+	
+	<div id="header">
+	<h1 class="font_0">Zheng Gao, PhD</h1>
+	<h1 class="font_8">COMPUTATIONAL APPLIED MATHEMATICS</p>
+	</div>
+
+	<ul id="menue">
+			<li><a href="#login"> Login</a></li>
+			<li><a href="#install"> Installation</a></li>
+			<li><a href="#Run"> Run</a><li>
+			<li><a href="#Movies"> Movies</a><li>
+	</ul>
+
+<div id="content">
+<p>In this page, you will learn the following things:</p>
+<ol>
+	<li>Login </li>
+	<li>Installation</li>
+	<li>Run your first code</li>
+	<li>Make a movie</li>
+</ol>
+
+<h2><a name="login">Log in</a></h2>
+<ul>
+	<li>To log in, you should have your own USERNAME and PASSWORD.</br></li>
+	<li>Then you can log in alpha or omega with the following command:</br>
+			<SPAN style="BACKGROUND-COLOR: #C0C0C0">ssh  -X  USERNAME@alpha.ams.sunysb.edu</br></SPAN>
+			<SPAN style="BACKGROUND-COLOR: #C0C0C0">Then type in your password.</br></SPAN></li>
+	<li>But it would be inefficient to remember and type it every time, so we do the following in your local machine:</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0"> >vi ~/.bashrc</br></SPAN>
+		Add a line in “.bashrc”</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">alias alpha=’ssh  -X  USERNAME@alpha.ams.sunysb.edu’</br></SPAN>
+		save  and exit. </br>
+		(Here you need to learn some basic operations for VIM)</br>
+		Then log in again.</br>
+		Now you can log in alpha by just typing “alpha” without remembering the long command.</br></li>
+</ul>
+
+
+<h2><a name="install">Installation</a></h2>
+<ul>
+	<li>To ignore the unnecessary warnings when cloning codes, you should new a “.hgrc” file in the host whose content is</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">[trusted]</br></SPAN>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">users = linli</br></SPAN>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">[trusted]</br></SPAN>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">groups = xgroup</br></SPAN></li>
+		<img src="gallery/hg.png" width="338" height="93" alt="" />
+	<li>You can copy FrontTier++ from professor Li’s directory with the following command</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0"> >hg clone ssh://USERNAME@omega.ams.sunysb.edu//export/home/linli/xgroup/FronTier++</Br></SPAN>An error that ".hg not found" would be reported if your path is not correct. This means that you should check your command and make sure the path correct.</li>
+	<li>Then enter into you FronTier++ directory to compile the codes by the following commands:</br>
+			<SPAN style="BACKGROUND-COLOR: #C0C0C0">>build  -n  -d  --with-hdf</br></SPAN>
+			<SPAN style="BACKGROUND-COLOR: #C0C0C0">>make</br></SPAN>
+			<img src="gallery/build.png" width="714" height="198" alt="" />
+			<img src="gallery/make.png" width="720" height="134" alt="" />
+			</br>			
+			Now the package is installed successfully</br></li>	
+	<li>To make sure the codes can be installed correctly, 
+	you should add several environmental variables to your “~/.bashrc” file before installation. 
+	The easiest way is to copy the “.bashrc” file from other people who have successfully installed the codes.</li>
+	<img src="gallery/path.png" width="795" height="213" alt="" />
+</ul>
+
+
+<h2><a name="run">Run your first code</a></h2>
+<ul>
+	<li>The simplest way to understand FronTier is try to modify and run several examples.
+	  Among them, a good choice is example3d.</li>
+	<li>Firstly, enter the example3d directory</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0"> >cd example3d</br></li></SPAN>
+		<img src="gallery/ex3d.png" width="789" height="87" alt="" />
+	<li>Copy one example code to ‘example.cpp’. For example:</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>cp example00.cpp  example.cpp</br></SPAN></li>
+	<li>Then compile the code to generate a executable file:</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>make</br></SPAN></li>
+		<img src="gallery/mk3d.png" width="791" height="109" alt="" />
+	<li>To run the code, you need several arguments:</br>
+		 the dimension of your problem, the input file and the output directory.</br>
+		 For most example3d, we don’t have the input file, so we ignore it.</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>./example –d 3 -o out-example</br></SPAN></li>
+		<img src="gallery/run3d.png" width="784" height="130" alt="" />
+	<li>After several minutes, the program is done and we can see the results in the output directory (i.e. /out-example).</br></li>
+	<li>Sometimes you need to keep ssh alive in case of disconnection.</br> 
+		Add the following scripts to “~/.ssh/config” file in your local machine.</br> </li>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">Host *</br></SPAN>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0"> ServerAliveInterval 60</br></SPAN>
+		<img src="gallery/ssh.png" width="724" height="46" alt="" />
+	<li>To keep running the code without connection, please search the command 'screen', which can keep the code running after you log out</li>
+	<img src="gallery/screen.png" width="718" height="79" alt="" />
+</ul>
+
+
+<h2><a name="movie">Make a movie</a></h2>
+<ul>
+	<li>Now it’s time to visualize your result. We use ‘VisIt’ to accomplish it.</li>
+	<li>Enter into your output directory (i.e. out-example)</br>
+	The <b>run-output</b> records all the information as running the code. So always check this file if something wrong happened</br>
+	The <b>gv.ts*</b> files record the snapshot of the interface, use geomview to visualize it</br>
+	The <b>vtk.ts*</b> files are the output data we will use</li>
+	<img src="gallery/finish.png" width="783" height="268" alt="" />
+	<li>Then, make VisIt index file for your result by the following command</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>ls vtk.ts00000*/3d-intfc.vtk > 3d-intfc.visit</br></SPAN>
+		Execute this command again if needed.</br>
+		For example, if we have another file named ‘box.vtk’ which gives the boundary, then we type the command again:</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>ls vtk.ts00000*/box.vtk > box.visit</br></SPAN></li>
+			<img src="gallery/box.png" width="787" height="38" alt="" />
+	<li>Now, you have box.visit and 3d-intfc.visit in your directory. Then the next step is to plot with VisIt.</li>
+	<img src="gallery/visit.png" width="787" height="38" alt="" />
+	<li>Run VisIt by just typing</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>visit</br></SPAN>
+		Then you got a GUI of visit</br></li>
+	<li>Open the two files</li>
+	<img src="gallery/openvisit.png" width="646" height="480" alt="" />
+	<li>Draw the pictures by adding mesh and color, then press draw</li>
+	<img src="gallery/plot.png" width="466" height="654" alt="" />
+	<img src="gallery/draw.png" width="374" height="135" alt="" />
+	<li>Generate JPG files by click “File -> Save movie” and then "next"</li>
+	<img src="gallery/save1.png" width="391" height="453" alt="" />
+	<img src="gallery/save2.png" width="515" height="394" alt="" />
+	<img src="gallery/save3.png" width="515" height="394" alt="" />
+	<img src="gallery/save4.png" width="515" height="394" alt="" />
+	<img src="gallery/save5.png" width="515" height="394" alt="" />
+	<img src="gallery/save6.png" width="515" height="394" alt="" />	
+	<img src="gallery/save7.png" width="370" height="197" alt="" />
+	<li>After all the JPG files are generated, return to command line</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>convert *.jpeg  example.gif</br></SPAN>
+		<img src="gallery/convert.png" width="615" height="16" alt="" />
+	<li>Then you will obtain a gif file.</br>
+			To run the gif file, use</br></li>
+			<SPAN style="BACKGROUND-COLOR: #C0C0C0">>animate example.gif</SPAN></br></li>
+		<img src="gallery/anim.png" width="720" height="54" alt="" />
+	<li>Sometimes for 2D problem, instead of using VisIt, 
+		some hdf files would be generated automatically in /hdf directory in you output.</br>
+		 Then you go to /hdf and type</br>
+		<SPAN style="BACKGROUND-COLOR: #C0C0C0">>hdf2gif dens.hdf dens.gif</br></SPAN>
+		In this way, you can also get a gif file for 2D problem. </br>
+		<img src="gallery/anim2.png" width="721" height="91" alt="" />
+	</li>
+</ul>
+Have fun!
+</div>
+    <div id="footer">
+  		<p style="text-align: center;">Department of Applied Mathematics & Statistics • Stony Brook, NY 11794-3600 • 631-632-8370 • Fax 631-632-8490</p>
+		<a href="#" class="go-top">Go Top</a>    
+    </div>
+</div>
+	<!-- JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE">
+<html>
+<head>
+<title>Entrainment and mixing</title>
+<meta name="author" content="Zheng Gao" >
+<meta name="date" content="2014-06-05T14:36:17-0400" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" href="../../style.css" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper"> 
+	
+	<div id="header">
+	<h1 class="font_0">Entrainment and Mixing in Turbulence</h1>
+	</div>
+
+	<ul id="menue">
+			<li><a href="#Introduction"> Introduction</a></li>
+			<li><a href="#Models"> Models</a></li>
+			<li><a href="#Simulation"> Simulation</a><li>
+			<li><a href="#Results"> Results</a><li>
+	</ul>
+	
+	<div  id="content" width=960 align="left">	
+	<div class="masonry">
+	    <div class="item">
+		<p class="font_6">Direct numerical simulation</p>
+		<p class="font_9">9.17.2013</p>
+		<img src="gallery/Turbulence/curl3d.png"/>
+		<p>Solving Navier Stokes equations in 3D</p>
+		<div id="read"><a target= _blank href="turbulence.html" >READ MORE</a></div>
+		</div>
+		
+		<div class="item">
+		<p class="font_6">Verification of water balance</p>
+		<p class="font_9">11.6.2013</p>
+		<img src="gallery/water/water_balance01.png"/>
+		<hr>
+		<p>Verification of water balance</p>
+		<div id="read"><a target= _blank href="water.html" >READ MORE</a></div>
+		</div>
+		
+		<div class="item">
+		<p class="font_6">MPI_test</p>
+		<p class="font_9">2.20.2014</p>
+		<img src="gallery/MPItest/MPI_vapor01.gif"/>
+		<hr>
+		<p>Test parallel communication of particles and scalar/vector field</p>
+		<div id="read"><a target= _blank href="MPI_test.html" >READ MORE</a></div>
+		</div>
+		
+		<div class="item">
+		<p class="font_6">Preferential concentration</p>
+		<p class="font_9">3.20.2014</p>
+		<img src="gallery/cluster/cluster.png"/>
+		<hr>
+		<p> The phenomenon of particles accumulating in the region of low
+		vorticity is often called preferential concentration. This occurs in the simulation when
+		the inertial effects of particles are considered</p>
+		<div id="read"><a target= _blank href="cluster.html" >READ MORE</a></div>
+		</div>
+		
+		<div class="item">
+		<p class="font_6">Entrainment and mixing</p>
+		<p class="font_9">4.9.2014</p>
+		<img src="gallery/Feb2/entrainment.png"/>
+		<hr>
+		<p>Entrainment and mixing</p>
+		<div id="read"><a target= _blank href="entrainment.html" >READ MORE</a></div>
+		</div>
+	</div>
+	</div>
+    <div id="footer">
+  		<p style="text-align: center;">Department of Applied Mathematics & Statistics • Stony Brook, NY 11794-3600 • 631-632-8370 • Fax 631-632-8490</p>
+		<a href="#" class="go-top">Go Top</a>    
+    </div>
+</div>
+	<!-- JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+</body>
+</html>

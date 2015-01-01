@@ -1,0 +1,97 @@
+<!DOCTYPE">
+<html>
+<head>
+<title>Entrainment and mixing</title>
+<meta name="author" content="Zheng Gao" >
+<meta name="date" content="2014-06-05T14:36:17-0400" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" href="../../style.css" media="screen">
+</head>
+
+<body>
+
+<div id="wrapper"> 
+	
+	<div id="header">
+	<h1 class="font_0">Entrainment and Mixing in Turbulence</h1>
+	</div>
+
+	<ul id="menue">
+			<li><a href="#Introduction"> Introduction</a></li>
+			<li><a href="#Models"> Models</a></li>
+			<li><a href="#Simulation"> Simulation</a><li>
+			<li><a href="#Results"> Results</a><li>
+	</ul>
+	<div id="content">
+
+<h2>Turbulence configuration</h2>
+<p>
+The turbulence is initialized in Fourier space with only the smallest wave number, then transformed into physics space.<br>
+We use two kinds of configurations to simulate different intensity of turbulence.</p>
+<img src="gallery/Feb2/turb.png" width=50%" alt="" /><br>
+
+<h2>Entrainment and mixing</h2>
+<p>
+Illustration for the entrainment and mixing process<br>
+At initial time, the cloud is set in the center of the box with higher vapor mixing ratio(1.02*qs) than the boundary.<br>
+The following two Figures illustrate the distribution function, the red line shows the value of qs.
+The current simulation runs for 20s physics time which is about one eddy turnover time.</p>
+ <table>
+<tr><td>Distribution function x-z slide</td>
+<td>Initial vapor in x-z slide</td>
+</tr>
+<tr>
+<td><img src="gallery/Feb2/vapfuc.png" width="100%" alt="" /></td>
+<td><img src="gallery/Feb2/vapdis.png" width="100%" alt="" /></td>
+</tr>
+</table>
+<p>
+The left figure shows the evolution of the vapor mixing ratio field and the right one shows the motion of droplets.<br> 
+At t=0s, the droplets are restricted in the supersaturated area. Here is set to be from x=0.3m to x=0.7m.<br> 
+Comparing to the computation domain 1 m^3, the dry air fraction is 40%. The color of the droplets represent their radius, 
+from blue(small) to red(large).</p>
+<table>
+<tr><td>vapor mixing ratio field</td>
+<td>Droplets</td>
+</tr>
+<tr>
+<td><img src="gallery/Feb2/vapor.gif" width="100%" alt="" /></td>
+<td><img src="gallery/Feb2/particle.gif" width="100%" alt="" /></td>
+</tr>
+</table>
+
+<table>
+<tr><td>RN diagram</td>
+<td>1-alpha versus NL</td>
+<td>N versus relative Dispersion</td>
+</tr>
+<tr>
+<td><img src="gallery/Feb2/RN.gif" width="100%" alt="" /></td>
+<td><img src="gallery/Feb2/alpha.gif" width="100%" alt="" /></td>
+<td><img src="gallery/Feb2/Disp.gif" width="100%" alt="" /></td>
+</tr>
+</table>
+
+<h2>RN diagram</h2>
+<p>
+Three different settings are used: RH = 86%, 76%, 66%, 56%</p>>
+<table>
+<tr><td>R-N diagram</td><td>Da number VS. slope of R-N diagram</td>
+<td>1-alpha VS. NL</td></tr>
+<tr>
+<td><img src="gallery/Feb2/RN.png" width="100%" alt="" /></td>
+<td><img src="gallery/Feb2/Da.png" width="100%" alt="" /></td>
+<td><img src="gallery/Feb2/alpha.png" width="100%" alt="" /></td>
+</tr>
+</table>
+</div>
+
+    <div id="footer">
+  		<p style="text-align: center;">Department of Applied Matdematics & Statistics • Stony Brook, NY 11794-3600 • 631-632-8370 • Fax 631-632-8490</p>  
+    </div>
+</div>
+</body>
+</html>
