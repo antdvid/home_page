@@ -17,7 +17,5 @@ var searchData=
   ['i_5fsphericalrotatepoint',['I_SphericalRotatePoint',['../d8/db9/group__POINT.html#gab7b201fb274939a19dff2c34367bd693',1,'iapi.h']]],
   ['i_5fsplitcurve',['I_SplitCurve',['../d7/dfb/group__CURVE.html#gaa31257a485f0828bb60bfef19eeaec49',1,'iapi.h']]],
   ['i_5ftransinteriorintfcpoints',['I_TransInteriorIntfcPoints',['../d5/d72/group__INTERFACE.html#gacf18b3cd3e9421df100beaf98ac849a4',1,'iapi.h']]],
-  ['interface_20function',['Interface Function',['../d2/d5e/group__iapi.html',1,'']]],
-  ['iapi_2eh',['iapi.h',['../d3/ddc/iapi_8h.html',1,'']]],
-  ['interface_20functions',['INTERFACE Functions',['../d5/d72/group__INTERFACE.html',1,'']]]
+  ['iapi_2eh',['iapi.h',['../d3/ddc/iapi_8h.html',1,'']]]
 ];

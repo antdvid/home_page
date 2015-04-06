@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['frontier_20boundary_20setting_20functions',['FronTier Boundary Setting Functions',['../d8/d79/group__BOUNDARY.html',1,'']]],
-  ['frontier_20create_20hypersurface',['FronTier Create Hypersurface',['../d0/db1/group__CREATE.html',1,'']]],
-  ['frontier_20function',['FronTier Function',['../d4/d6d/group__fapi.html',1,'']]],
   ['fapi_2eh',['fapi.h',['../d7/d35/fapi_8h.html',1,'']]],
-  ['frontier_20field_20_28state_29_20functions',['FronTier Field (State) Functions',['../dc/d77/group__FIELD.html',1,'']]],
   ['ft_5faddhdfmovievariable',['FT_AddHdfMovieVariable',['../d4/d54/group__INITIALIZATION.html#gad987777e3ccafbf21eac99887362d924',1,'fapi.h']]],
   ['ft_5faddmovieframe',['FT_AddMovieFrame',['../de/d71/group__OUTPUT.html#gad32bc73d7f3427bc42db9a86a7fad142',1,'fapi.h']]],
   ['ft_5faddtimesteptocounter',['FT_AddTimeStepToCounter',['../d5/d9a/group__PROPAGATION.html#ga51834b9206a288347040fe15e719e295',1,'fapi.h']]],
@@ -126,17 +122,5 @@ var searchData=
   ['ft_5ftimelimitreached',['FT_TimeLimitReached',['../dd/d10/group__TIME.html#ga869ebe5c3c2fbd15767e266febe88e46',1,'fapi.h']]],
   ['ft_5ftriarraymemoryalloc',['FT_TriArrayMemoryAlloc',['../da/d61/group__MEMORY.html#gabe5793d460243dc938707cee6c3240ee',1,'fapi.h']]],
   ['ft_5fvectormemoryalloc',['FT_VectorMemoryAlloc',['../da/d61/group__MEMORY.html#ga570eae212fd06f81b13cba40afab4f13',1,'fapi.h']]],
-  ['ft_5fxgraphsampleline',['FT_XgraphSampleLine',['../de/d71/group__OUTPUT.html#ga4eb501b23f143596c39ede7060bb06db',1,'fapi.h']]],
-  ['frontier_20interface_20geometry_20functions',['FronTier Interface Geometry Functions',['../db/d9e/group__GEOMETRY.html',1,'']]],
-  ['frontier_20interface_2dgrid_20functions',['FronTier Interface-Grid Functions',['../de/dba/group__GRIDINTFC.html',1,'']]],
-  ['frontier_20manual',['FronTier Manual',['../index.html',1,'']]],
-  ['frontier_20print_20information',['FronTier Print Information',['../d7/d15/group__INFO.html',1,'']]],
-  ['frontier_20initialization_20functions',['FronTier Initialization Functions',['../d4/d54/group__INITIALIZATION.html',1,'']]],
-  ['frontier_20memory_20management_20functions',['FronTier Memory Management Functions',['../da/d61/group__MEMORY.html',1,'']]],
-  ['frontier_20interface_20optimization_20functions',['FronTier Interface Optimization Functions',['../d8/dc0/group__OPTIMIZATION.html',1,'']]],
-  ['frontier_20output_20functions',['FronTier Output Functions',['../de/d71/group__OUTPUT.html',1,'']]],
-  ['frontier_20parallel_20communication_20functions',['FronTier Parallel Communication Functions',['../d7/d3e/group__PARALLEL.html',1,'']]],
-  ['frontier_20propagation_20functions',['FronTier Propagation Functions',['../d5/d9a/group__PROPAGATION.html',1,'']]],
-  ['frontier_20interface_20query_20functions',['FronTier Interface Query Functions',['../d1/d33/group__QUERY.html',1,'']]],
-  ['frontier_20time_20control_20functions',['FronTier Time Control Functions',['../dd/d10/group__TIME.html',1,'']]]
+  ['ft_5fxgraphsampleline',['FT_XgraphSampleLine',['../de/d71/group__OUTPUT.html#ga4eb501b23f143596c39ede7060bb06db',1,'fapi.h']]]
 ];

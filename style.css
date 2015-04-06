@@ -47,7 +47,7 @@ color:#dfae6c;
 #content {	background-color:#dcdcdc; 
 		background-image: url(gallery/bg.jpg); 
 		background-repeat: no-repeat;
-    	background-attachment: fixed;
+    		background-attachment: fixed;
 		font-size: 16px;  
 		line-height: 2em;  
 		color:#27223e; 
@@ -69,7 +69,8 @@ color:#dfae6c;
 	color: rgb(39, 34, 62);
 	line-height: 2em;  
 	padding: 30px; 
-	margin: 70 -200 70 -200;} 
+	margin: 0 -200;
+	margin-bottom: 40;} 
 
 
 
